@@ -1,0 +1,45 @@
+.hidden {
+    display: none;
+}
+
+.btn-wrapper {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.btn-wrapper button {
+    cursor: pointer;
+}
+
+.current-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    border: 2px solid black;
+}
+.future-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.future-wrapper li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    border: 2px solid black;
+    width: 49%;
+}
+#history {
+    list-style: none;
+    padding: 0;
+}
+#history li span {
+   color: blue;
+   text-decoration: underline;
+   cursor: pointer;
+}

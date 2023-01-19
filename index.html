@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Enter a city for weather data</h1>
+
+    
+    <div id="history-wrapper">
+        <p>Search History:</p>
+        <ul id="history">
+
+        </ul>
+    </div>
+
+    <form id="location-form">
+        <input type="text" name="city" id="city" placeholder="city">
+        <input type="text" name="state" id="state" placeholder="state">
+        <input id="submit" type="submit" value="Get weather">
+    </form>
+
+    <div class="btn-wrapper hidden">
+        <button id="current-weather" type="button">Current Weather</button>
+        <button id="future-weather" type="button">Future Weather</button>
+    </div>
+
+    <div class="current-wrapper hidden">
+        <img src="" alt="Weather Icon" id="current-weather__icon" width="100" height="100">
+        <h2 id="current-city"></h2>
+        <h3 id="current-date"></h3>
+        <p id="current-temp"></p>
+        <p id="current-hum"></p>
+        <p id="current-wind"></p>
+    </div>
+
+    <ul class="future-wrapper hidden">
+    </ul>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
